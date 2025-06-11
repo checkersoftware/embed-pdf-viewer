@@ -1,0 +1,1 @@
+ccall,cwrap,wasmExports,addFunction,removeFunction
