@@ -9,9 +9,11 @@ Compared to the repo we forked off of, this repo also includes the methods and f
 #### Runtime methods
 Taken directly from our fork of pdfium-lib; the old build process, in the `wasm.py` file.
 #### Functions
-This is more complicated to find, but in pdfium-lib, the Python build script would read from an XML file and put essentially all the tags that contain functions names as exported functions.
-- We filtered it down slightly to the relevant functions for our uses. Most likely doesn't save much space if at all regardless; I believe it only affects the .js export size
+This is more complicated to find, but in pdfium-lib, the Python build script would read from an XML file and put essentially all the tags that contain functions names as exported functions. I'm 100% sure there are much better ways of getting this list of functions.
+- We filtered it down slightly to the relevant functions for our uses. Most likely doesn't save much space if at all; I believe it only affects the .js export size.
 - Refer to Diffchecker repo's PR history for scripts to parse our code for this information.
+- That basically just means you'll have to figure out yourself what functions to export for the build. The easiest method is to just include everything in the list below.
+
 
 <details>
 <summary>The full list of these functions from searching the XML</summary>
