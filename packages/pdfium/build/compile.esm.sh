@@ -1,9 +1,10 @@
 em++ $(ls *.cpp) \
   /build/pdfium/out/prod/obj/libpdfium.a \
-  -g \
+  -sASSERTIONS=1 \
+  -Oz \
   -v \
   -sEXPORT_ES6=1 \
-  -sENVIRONMENT=node,worker,web,shell \
+  -sENVIRONMENT=worker \
   -sMODULARIZE=1 \
   -sWASM=1 \
   -sALLOW_MEMORY_GROWTH=1 \
