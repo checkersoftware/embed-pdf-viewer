@@ -14,6 +14,8 @@ This is more complicated to find, but in pdfium-lib, the Python build script wou
 - Refer to Diffchecker repo's [PR history](https://github.com/checkersoftware/diffchecker/pull/1124#issuecomment-2964504856) for scripts to parse our code for this information.
 - That basically just means you'll have to figure out yourself what functions to export for the build. The easiest method is to just include everything in the list below.
 
+To add a function to the build, add the name to the `exported-functions.txt` file.
+
 
 <details>
 <summary>The full list of these functions from searching the XML</summary>

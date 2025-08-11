@@ -66,5 +66,5 @@ RUN bash -E /build/wasm/compile.esm.sh
 
 FROM scratch AS exportor
 COPY --from=pdfium-wasm /build/wasm /dist
-COPY --from=pdfium-wasm /build/pdfium/public /dist/pdifum
+COPY --from=pdfium-wasm /build/pdfium/public /dist/pdfium
 COPY --from=pdfium-wasm /emsdk/upstream/emscripten/cache/sysroot/include /dist/emscripten

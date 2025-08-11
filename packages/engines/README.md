@@ -13,7 +13,7 @@ npm install @embedpdf/engines
 ```typescript
 import { createPdfiumModule, PdfiumEngine } from '@embedpdf/engines';
 
-// implement loadWasmBinary to load pdifum wasm file
+// implement loadWasmBinary to load pdfium wasm file
 const wasmBinary = await loadWasmBinary();
 const wasmModule = await createPdfiumModule({ wasmBinary });
 const engine = new PdfiumEngine(wasmModule, new ConsoleLogger());
